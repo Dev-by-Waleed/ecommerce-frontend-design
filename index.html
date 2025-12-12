@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="main-nav">
             <div class="container">
                 <div class="logo-button">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -20,7 +21,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="./assets/Layout/Brand/logo-colored.png" alt=""></a>
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/Layout/Brand/logo-colored.png" alt=""></a>
                 </div>
                 <div class="icons">
                     <img src="./assets/Mobile/Icon/Vector.png" alt="">
@@ -36,13 +37,18 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item select-item py-2" href="#section-sale">Automobiles</a></li>
-                                <li><a class="dropdown-item select-item py-2" href="#title-recommend">Clothes and wear</a></li>
-                                <li><a class="dropdown-item select-item py-2" href="#section-appliances">Home interiors</a></li>
-                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Computer and tech</a></li>
-                                <li><a class="dropdown-item select-item py-2" href="#section-gadgets">Tools, equipments</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#title-recommend">Clothes and
+                                        wear</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-appliances">Home
+                                        interiors</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Computer and tech</a>
+                                </li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-gadgets">Tools,
+                                        equipments</a></li>
                                 <li><a class="dropdown-item select-item py-2" href="#">Sports and outdoor</a></li>
                                 <li><a class="dropdown-item select-item py-2" href="#">Animal and pets</a></li>
-                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Machinery tools</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Machinery tools</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -53,28 +59,24 @@
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><img
-                                    src="./assets/Layout/alibaba/Image/icons/Profile.png" alt=""></a>
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-user"></i><p>Profile</p></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./assets/Layout/alibaba/Image/icons/Message.png"
-                                    alt=""></a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-message"></i><p>Message</p></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./assets/Layout/alibaba/Image/icons/Orders.png"
-                                    alt=""></a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i><p>Orders</p></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./assets/Layout/alibaba/Image/icons/Cart.png"
-                                    alt=""></a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping"></i><p>Add to cart</p></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="seconary-nav">
             <div class="container">
-                <form class="d-flex" role="search">
+                <form class="d-flex" role="search" id="mobile-nav">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn">All category</button>
                     <button class="btn">Gadgets</button>
@@ -113,51 +115,52 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="user-accordance d-flex list-unstyled">
-                        <li class="nav-item dropdown px-3">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                English, USD
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
-                                <li><a class="dropdown-item" href="#">Chinese, CNY</a></li>
-                                <li><a class="dropdown-item" href="#">German, EUR</a></li>
-                                <li><a class="dropdown-item" href="#">Danish, DKK</a></li>
-                                <li><a class="dropdown-item" href="#">French, EUR</a></li>
-                                <li><a class="dropdown-item" href="#">English, GBP</a></li>
-                                <li><a class="dropdown-item" href="#">English, AUD</a></li>
-                                <li><a class="dropdown-item" href="#">Italian, EUR</a></li>
-                                <li><a class="dropdown-item" href="#">Russian, RUB</a></li>
-                                <li><a class="dropdown-item" href="#">English, USD</a></li>
-                            </ul>
+                    <div class="d-flex list-unstyled px-3" id="user-accordance">
+                        <li>
+                            <select name="currency" id="currency" class="form-select bg-body-tertiary border-0 "
+                                aria-label="Default select example">
+                                <option value="AED"> &nbsp; Arabic, AED </option>
+                                <option value="CNY"> &nbsp; Chinese, CNY</option>
+                                <option value="EUR"> &nbsp; German, EUR</option>
+                                <option value="DKK"> &nbsp; Danish, DKK</option>
+                                <option value="EUR"> &nbsp; French, EUR</option>
+                                <option value="GBP"> &nbsp; English, GBP</option>
+                                <option value="AUD"> &nbsp; English, AUD</option>
+                                <option value="EUR"> &nbsp; Italian, EUR</option>
+                                <option value="RUB"> &nbsp; Russian, RUB</option>
+                                <option selected value="USD"> &nbsp; English, USD &nbsp;</option>
+                            </select>
                         </li>
                         <li class="nav-item dropdown px-3">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Ship to
-                                <img src="./assets/Layout1/Image/flags/AE@2x.png" alt="">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">China <img
-                                            src="./assets/Layout1/Image/flags/CN@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">Germany <img
-                                            src="./assets/Layout1/Image/flags/DE@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">Denmark <img
-                                            src="./assets/Layout1/Image/flags/DK@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">France <img
-                                            src="./assets/Layout1/Image/flags/FR@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">UK <img
-                                            src="./assets/Layout1/Image/flags/GB@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">Austrlia <img
-                                            src="./assets/Layout1/Image/flags/icon.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">Italy <img
-                                            src="./assets/Layout1/Image/flags/IT@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">Russia <img
-                                            src="./assets/Layout1/Image/flags/RU@2x.png" alt=""></a></li>
-                                <li><a class="dropdown-item" href="#">USA <img
-                                            src="./assets/Layout1/Image/flags/US@2x.png" alt=""></a></li>
-                            </ul>
+                            <select name="country" id="country" class="form-select bg-body-tertiary border-0">
+                                <option value="China"> &nbsp; Ship to China <img
+                                        src="./assets/Layout1/Image/flags/CN@2x.png" alt="">
+                                </option>
+                                <option value="Germany"> &nbsp; Ship to Germany <img
+                                        src="./assets/Layout1/Image/flags/DE@2x.png" alt="">
+                                </option>
+                                <option value="Denmark"> &nbsp; Ship to Denmark <img
+                                        src="./assets/Layout1/Image/flags/DK@2x.png" alt="">
+                                </option>
+                                <option value="France"> &nbsp; Ship to France <img
+                                        src="./assets/Layout1/Image/flags/FR@2x.png" alt="">
+                                </option>
+                                <option value="UK"> &nbsp; Ship to UK <img src="./assets/Layout1/Image/flags/GB@2x.png"
+                                        alt="">
+                                </option>
+                                <option value="Austrlia"> &nbsp; Ship to Austrlia <img
+                                        src="./assets/Layout1/Image/flags/icon.png" alt="">
+                                </option>
+                                <option value="Italy"> &nbsp; Ship to Italy <img
+                                        src="./assets/Layout1/Image/flags/IT@2x.png" alt="">
+                                </option>
+                                <option value="Russia"> &nbsp; Ship to Russia <img
+                                        src="./assets/Layout1/Image/flags/RU@2x.png" alt="">
+                                </option>
+                                <option selected value="USA"> &nbsp; Ship to USA <img
+                                        src="./assets/Layout1/Image/flags/US@2x.png" alt="">
+                                </option>
+                            </select>
                         </li>
                     </div>
                 </div>
@@ -393,7 +396,7 @@
         </div>
         <h3 class="container my-4" id="title-recommend">Recommended items</h3>
         <div class="Section-recommend container">
-            <a href="#" class="card">
+            <a href="./Product-shirt.html" class="card">
                 <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">$10.30</h5>
@@ -565,64 +568,58 @@
             </form>
         </div>
     </main>
-    <footer class="container">
-        <div class="main-footer my-4">
+    <footer>
+        <div class="main-footer my-4 container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-3">
                     <div class="company-info">
                         <img src="./assets/Layout/Brand/logo-colored.png" alt="">
                         <p>Best information about the company gies here but now lorem ipsum is</p>
                     </div>
                     <div class="company-socials">
-                        <img src="./assets/Layout/Icon-contact/social/facebook3.png" alt="">
-                        <img src="./assets/Layout/Icon-contact/social/Fill 184.png" alt="">
-                        <img src="./assets/Layout/Icon-contact/social/linkedin3.png" alt="">
-                        <img src="./assets/Layout/Icon-contact/social/instagram3.png" alt="">
-                        <img src="./assets/Layout/Icon-contact/social/youtube3.png" alt="">
+                        <a href="#"><img src="./assets/Layout/Icon-contact/social/facebook3.png" alt="facebook"></a>
+                        <a href="#"><img src="./assets/Layout/Icon-contact/social/Fill 184.png" alt="X/twitter"></a>
+                        <a href="#"><img src="./assets/Layout/Icon-contact/social/linkedin3.png" alt="linkedin"></a>
+                        <a href="#"><img src="./assets/Layout/Icon-contact/social/instagram3.png" alt="instagram"></a>
+                        <a href="#"><img src="./assets/Layout/Icon-contact/social/youtube3.png" alt="youtube"></a>
                     </div>
                 </div>
-                <div class="col-8">
-                    <table class="w-100">
-                        <tr>
-                            <th>About</th>
-                            <th>Partnership</th>
-                            <th>Information</th>
-                            <th>For users</th>
-                        </tr>
-                        <tr>
-                            <td>About Us</td>
-                            <td>About Us</td>
-                            <td>Help Center</td>
-                            <td>Login</td>
-                        </tr>
-                        <tr>
-                            <td>Find store</td>
-                            <td>Find store</td>
-                            <td>Money Refund</td>
-                            <td>Register</td>
-                        </tr>
-                        <tr>
-                            <td>Categories</td>
-                            <td>Categories</td>
-                            <td>Shipping</td>
-                            <td>Settings</td>
-                        </tr>
-                        <tr>
-                            <td>Blogs</td>
-                            <td>Blogs</td>
-                            <td>Contact us</td>
-                            <td>My Orders</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-2">
-                    <p><b>Get app</b></p>
-                    <img src="./assets/Layout/Misc/market-button.png" alt="">
-                    <img src="./assets/Layout/Misc/Group.png" alt="">
+                <div class="col-9">
+                    <div class="About footer-options">
+                        <p><b>About</b></p>
+                        <a href="#">About Us</a>
+                        <a href="#">Find store</a>
+                        <a href="#">Categories</a>
+                        <a href="#">Blogs</a>
+                    </div>
+                    <div class="Partnership footer-options">
+                        <p><b>Partnership</b></p>
+                        <a href="#">About Us</a>
+                        <a href="#">Find store</a>
+                        <a href="#">Categories</a>
+                        <a href="#">Blogs</a>
+                    </div>
+                    <div class="Information footer-options">
+                        <p><b>Information</b></p>
+                        <a href="#">Help Center</a>
+                        <a href="#">Money Refund</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                    <div class="users footer-options">
+                        <p><b>For users</b></p>
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                        <a href="#">Settings</a>
+                        <a href="#">My Orders</a>
+                    </div>
+                    <div class="app footer-options"><p><b>Get app</b></p>
+                    <a href="#"><img src="./assets/Layout/Misc/market-button.png" alt="appstore"></a>
+                    <a href="#"><img src="./assets/Layout/Misc/Group.png" alt="playstore"></div></a>
                 </div>
             </div>
         </div>
-        <div class="footer-detail my-3">
+        <div class="footer-detail ms-3">
             <p>© 2025 Ecommerce by Waleed Ahmad. </p>
             <div class="language"><img src="./assets/Layout1/Image/flags/US@2x.png" alt="">
                 <span>English</span>
