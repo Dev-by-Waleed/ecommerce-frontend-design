@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <div class="logo-button">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent-1" aria-controls="navbarSupportedContent-1"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/Layout/Brand/logo-colored.png" alt=""></a>
+                </div>
+                <div class="icons">
+                    <img src="./assets/Mobile/Icon/Vector.png" alt="">
+                    <img src="./assets/Mobile/Icon/control/person.png" alt="">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                All category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Automobiles</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#title-recommend">Clothes and
+                                        wear</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-appliances">Home
+                                        interiors</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Computer and tech</a>
+                                </li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-gadgets">Tools,
+                                        equipments</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#">Sports and outdoor</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#">Animal and pets</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-sale">Machinery tools</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More category</a></li>
+                            </ul>
+                        </button>
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><img
+                                    src="./assets/Layout/alibaba/Image/icons/Profile.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./assets/Layout/alibaba/Image/icons/Message.png"
+                                    alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./assets/Layout/alibaba/Image/icons/Orders.png"
+                                    alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./assets/Layout/alibaba/Image/icons/Cart.png"
+                                    alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="seconary-nav">
+            <div class="container">
+                <form class="d-flex" role="search" id="mobile-nav">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn">All category</button>
+                    <button class="btn">Gadgets</button>
+                    <button class="btn">Clothes</button>
+                    <button class="btn">Accessibility</button>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">All category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-sale">Hot offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift boxes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu item</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Money Refund</a></li>
+                                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex list-unstyled px-3" id="user-accordance">
+                        <li>
+                            <select name="currency" id="currency" class="form-select bg-body-tertiary border-0 "
+                                aria-label="Default select example">
+                                <option value="AED"> &nbsp; Arabic, AED </option>
+                                <option value="CNY"> &nbsp; Chinese, CNY</option>
+                                <option value="EUR"> &nbsp; German, EUR</option>
+                                <option value="DKK"> &nbsp; Danish, DKK</option>
+                                <option value="EUR"> &nbsp; French, EUR</option>
+                                <option value="GBP"> &nbsp; English, GBP</option>
+                                <option value="AUD"> &nbsp; English, AUD</option>
+                                <option value="EUR"> &nbsp; Italian, EUR</option>
+                                <option value="RUB"> &nbsp; Russian, RUB</option>
+                                <option selected value="USD"> &nbsp; English, USD &nbsp;</option>
+                            </select>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <select name="country" id="country" class="form-select bg-body-tertiary border-0">
+                                <option value="China"> &nbsp; Ship to China <img
+                                        src="./assets/Layout1/Image/flags/CN@2x.png" alt="">
+                                </option>
+                                <option value="Germany"> &nbsp; Ship to Germany <img
+                                        src="./assets/Layout1/Image/flags/DE@2x.png" alt="">
+                                </option>
+                                <option value="Denmark"> &nbsp; Ship to Denmark <img
+                                        src="./assets/Layout1/Image/flags/DK@2x.png" alt="">
+                                </option>
+                                <option value="France"> &nbsp; Ship to France <img
+                                        src="./assets/Layout1/Image/flags/FR@2x.png" alt="">
+                                </option>
+                                <option value="UK"> &nbsp; Ship to UK <img src="./assets/Layout1/Image/flags/GB@2x.png"
+                                        alt="">
+                                </option>
+                                <option value="Austrlia"> &nbsp; Ship to Austrlia <img
+                                        src="./assets/Layout1/Image/flags/icon.png" alt="">
+                                </option>
+                                <option value="Italy"> &nbsp; Ship to Italy <img
+                                        src="./assets/Layout1/Image/flags/IT@2x.png" alt="">
+                                </option>
+                                <option value="Russia"> &nbsp; Ship to Russia <img
+                                        src="./assets/Layout1/Image/flags/RU@2x.png" alt="">
+                                </option>
+                                <option selected value="USA"> &nbsp; Ship to USA <img
+                                        src="./assets/Layout1/Image/flags/US@2x.png" alt="">
+                                </option>
+                            </select>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <div class="Breadcrumb container">
+                <p> Home > </p>
+                <p> Clothings > </p>
+                <p> Men’s wear > </p>
+                <p> Summer clothing > </p>
+            </div>
+    </header>
+    <main>
+        <div class="main-content container row">
+            <div class="col-12 col-lg-4">
+                <div class="image-area">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                </div>
+                <div class="gallery-images">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                    <img src="./assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6"></div>
+            <div class="col-12 col-lg-2">
+                <div class="supplier-card">
+                    <div class="supplier">
+                        <img src="./assets/Layout1/Image/flags/AE@2x.png" alt="">
+                        <div class="supplier-name"><p>Supplier</p> <p>Guanjoi Trading LLC</p></div></div>
+                    <div class="supplier-detail"></div>
+                    <div class="supplier-detail"></div>
+                    <div class="supplier-detail"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
