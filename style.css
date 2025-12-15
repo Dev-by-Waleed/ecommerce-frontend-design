@@ -11,7 +11,7 @@ a {
                                                         /* HEADER */
                                                         /* NAVBAR */
 header {
-    background-color: var(--border-default);
+    background-color: var(--secondary-color);
 }
 .navbar>.container {
     justify-content: space-between !important;
@@ -103,7 +103,7 @@ option:checked {
 
                                                              /* MAIN*/
 main {
-    background-color: var(--border-default);
+    background-color: #f7fafc;
     padding: 20px 0;
 }
                                                              /* Hero-1 */

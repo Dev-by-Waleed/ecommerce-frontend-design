@@ -11,7 +11,10 @@ a {
                                                         /* HEADER */
                                                         /* NAVBAR */
 header {
-    background-color: var(--border-default);
+    background-color: var(--secondary-color);
+}
+header p {
+    margin: 0px;
 }
 .navbar>.container {
     justify-content: space-between !important;
@@ -100,22 +103,30 @@ option:checked {
 }
 
 body {
-    background-color: var(--border-default);
+    background-color: #f7fafc;
 }
 main {
     display: flex;
+    background-color: #f7fafc;
 }
 details {
     color: var(--primary-color);
 }
-.Breadcrumb {
-    display: flex;
-    background-color: var(--border-default);
+.top {
+    background-color: #f7fafc;
+    
+
 }
-.Breadcrumb p {
-    margin: 0;
-    padding: 20px 10px 10px;
+.Breadcrumb {
     color: var(--last-option);
+    padding: 20px 30px;
+}
+.Breadcrumb span {
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
 .sidebar {
@@ -169,7 +180,7 @@ details {
     border-radius: 6px;
     border: 2px solid var(--border-default);
 }
-.content-top .forms {
+.content-top .forms {   
     display: flex;
     align-items: center;
     gap: 20px;
