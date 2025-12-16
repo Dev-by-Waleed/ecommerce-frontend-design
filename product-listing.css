@@ -148,7 +148,7 @@ details {
 }
 .sidebar .range-forms input {
     width: 90px;
-    border: 2px solid var(--last-option);
+    border: 2px solid var(--border-default);
     border-radius: 6px;
 }
 .sidebar .category > input {
@@ -156,7 +156,7 @@ details {
     width: 100%;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    border: 2px solid var(--last-option);
+    border: 2px solid var(--border-default);
     border-radius: 6px;
     margin: 10px 0;
 }
@@ -189,6 +189,9 @@ details {
     border: 2px solid var(--border-default);
     border-radius: 6px;
 }
+.content-top #pageBtn {
+    background-color: var(--border-default);
+}
 .Content-A .product-card {
     height: 230px;
     background-color: var(--secondary-color);
@@ -205,8 +208,9 @@ details {
 .Content-A .product-details {
     position: relative;
 }
-.Content-A .product-details .favourite {
+.product-details .favourite {
     position: absolute;
+    cursor: pointer;
     right: 0;
     top: 0;
     color: var(--primary-color);
@@ -215,14 +219,50 @@ details {
     padding: 5px 10px;
     margin: 5px 10px;
 }
-.Content-A .product-details p span:first-of-type{
+.product-details p span:first-of-type{
     color: #FF9017;
 }
-.Content-A .product-details s, .Content-A .product-details p span:nth-of-type(2) {
+.product-details s, .Content-A .product-details p span:nth-of-type(2) {
     color: var(--last-option);
 }
 .Content-A .product-details p span:nth-of-type(3) {
     color: #00B517;
+}
+.Content-G {
+    display: none;
+}
+.Content-G .filter-applied {
+    height: 32px;
+}
+.Content-G .grid-system {
+    display: grid;
+    grid-template: 405px 405px 405px /1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+.Content-G .grid-system .product-card {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--border-default);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.Content-G .grid-system .product-card .product-img {
+    height: 200px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.Content-G .grid-system .product-img  img {
+    padding: 0 60px;
+    width: 100%;
+}
+.Content-G .grid-system .product-details {
+    margin-top: auto;
+    padding: 20px;
+    padding-right: 80px;
+    position: relative;
 }
 
 
