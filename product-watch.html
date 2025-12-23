@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Brand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./product.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" id="main-nav">
+            <div class="container">
+                <div class="logo-button">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent-1" aria-controls="navbarSupportedContent-1"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/Layout/Brand/logo-colored.png"
+                            alt=""></a>
+                </div>
+                <div class="icons">
+                    <a href="./cart.html"><img src="./assets/Mobile/Icon/Vector.png" alt="cart"></a>
+                    <img src="./assets/Mobile/Icon/control/person.png" alt="profile">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                All category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item select-item py-2"
+                                        href="./product-listing.html">Automobiles</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#title-recommend">Clothes and
+                                        wear</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-appliances">Home
+                                        interiors</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="./product-listing.html">Computer and
+                                        tech</a>
+                                </li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-gadgets">Tools,
+                                        equipments</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#">Sports and outdoor</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#">Animal and pets</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="./product-listing.html">Machinery
+                                        tools</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./product-listing.html">More category</a></li>
+                            </ul>
+                        </button>
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-message"></i>
+                                <p>Message</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>
+                                <p>Orders</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html"><i class="fa-solid fa-basket-shopping"></i>
+                                <p>Add to cart</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg" id="seconary-nav">
+            <div class="container">
+                <form class="d-flex" role="search" id="mobile-nav">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn">All category</button>
+                    <button class="btn">Gadgets</button>
+                    <button class="btn">Clothes</button>
+                    <button class="btn">Accessibility</button>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./product-listing.html">All
+                                category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-sale">Hot offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift boxes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu item</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Money Refund</a></li>
+                                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex list-unstyled px-3" id="user-accordance">
+                        <li>
+                            <select name="currency" id="currency" class="form-select border-0 "
+                                aria-label="Default select example">
+                                <option value="AED"> &nbsp; Arabic, AED </option>
+                                <option value="CNY"> &nbsp; Chinese, CNY</option>
+                                <option value="EUR"> &nbsp; German, EUR</option>
+                                <option value="DKK"> &nbsp; Danish, DKK</option>
+                                <option value="EUR"> &nbsp; French, EUR</option>
+                                <option value="GBP"> &nbsp; English, GBP</option>
+                                <option value="AUD"> &nbsp; English, AUD</option>
+                                <option value="EUR"> &nbsp; Italian, EUR</option>
+                                <option value="RUB"> &nbsp; Russian, RUB</option>
+                                <option selected value="USD"> &nbsp; English, USD &nbsp;</option>
+                            </select>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <select name="country" id="country" class="form-select border-0">
+                                <option value="China"> &nbsp; Ship to China <img
+                                        src="./assets/Layout1/Image/flags/CN@2x.png" alt="">
+                                </option>
+                                <option value="Germany"> &nbsp; Ship to Germany <img
+                                        src="./assets/Layout1/Image/flags/DE@2x.png" alt="">
+                                </option>
+                                <option value="Denmark"> &nbsp; Ship to Denmark <img
+                                        src="./assets/Layout1/Image/flags/DK@2x.png" alt="">
+                                </option>
+                                <option value="France"> &nbsp; Ship to France <img
+                                        src="./assets/Layout1/Image/flags/FR@2x.png" alt="">
+                                </option>
+                                <option value="UK"> &nbsp; Ship to UK <img src="./assets/Layout1/Image/flags/GB@2x.png"
+                                        alt="">
+                                </option>
+                                <option value="Austrlia"> &nbsp; Ship to Austrlia <img
+                                        src="./assets/Layout1/Image/flags/icon.png" alt="">
+                                </option>
+                                <option value="Italy"> &nbsp; Ship to Italy <img
+                                        src="./assets/Layout1/Image/flags/IT@2x.png" alt="">
+                                </option>
+                                <option value="Russia"> &nbsp; Ship to Russia <img
+                                        src="./assets/Layout1/Image/flags/RU@2x.png" alt="">
+                                </option>
+                                <option selected value="USA"> &nbsp; Ship to USA <img
+                                        src="./assets/Layout1/Image/flags/US@2x.png" alt="">
+                                </option>
+                            </select>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="top">
+            <div class="Breadcrumb container">
+                <span>Home</span>
+                <span>></span>
+                <span>Tech</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <div class="row gx-4">
+            <div class="col-lg-4">
+                <div class="border rounded p-2 mb-3 d-flex justify-content-center align-items-center bg-white"
+                    style="height: 350px;">
+                    <img src="./assets/Image/tech/8.png" class="img-fluid" alt="Main Product" style="max-height: 100%;">
+                </div>
+                <div class="d-flex gap-2 justify-content-between">
+                    <div class="border rounded p-1"><img src="./assets/Image/tech/8.png" width="50"></div>
+                    <div class="border rounded p-1"><img src="./assets/Image/tech/8.png" width="50"></div>
+                    <div class="border rounded p-1"><img src="./assets/Image/tech/8.png" width="50"></div>
+                    <div class="border rounded p-1"><img src="./assets/Image/tech/8.png" width="50"></div>
+                    <div class="border rounded p-1"><img src="./assets/Image/tech/8.png" width="50"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <h4 class="mb-2 text-dark">Smart White Colored Watch</h4>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="text-warning me-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span class="text-warning fw-bold">9.3</span>
+                    </div>
+                    <span class="text-muted me-3"><i class="fas fa-comment-alt me-1"></i> 32 reviews</span>
+                    <span class="text-muted"><i class="fas fa-shopping-basket me-1"></i> 154 sold</span>
+                </div>
+
+                <div class="bg-light-warning p-3 mb-3 d-flex justify-content-around align-items-center"
+                    style="background-color: #FFF0DF;">
+                    <div class="border-end pe-4 border-secondary border-opacity-25">
+                        <h5 class="text-danger mb-0">$99.00</h5>
+                        <small class="text-muted">50-100 pcs</small>
+                    </div>
+                    <div class="border-end pe-4 border-secondary border-opacity-25">
+                        <h5 class="text-dark mb-0">$90.00</h5>
+                        <small class="text-muted">100-700 pcs</small>
+                    </div>
+                    <div>
+                        <h5 class="text-dark mb-0">$78.00</h5>
+                        <small class="text-muted">700+ pcs</small>
+                    </div>
+                </div>
+
+                <table class="table table-borderless table-sm text-secondary">
+                    <tbody>
+                        <tr>
+                            <td width="100">Price:</td>
+                            <td>Negotiable</td>
+                        </tr>
+                        <tr>
+                            <td width="100">Type:</td>
+                            <td>Classic shoes</td>
+                        </tr>
+                        <tr>
+                            <td width="100">Material:</td>
+                            <td>Plastic material</td>
+                        </tr>
+                        <tr>
+                            <td width="100">Design:</td>
+                            <td>Modern nice</td>
+                        </tr>
+                        <tr>
+                            <td class="border-top pt-2">Customization:</td>
+                            <td class="border-top pt-2">Customized logo and design custom packages</td>
+                        </tr>
+                        <tr>
+                            <td>Protection:</td>
+                            <td>Refund Policy</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty:</td>
+                            <td>2 years full warranty</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card border-1 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-info text-white rounded px-2 py-1 fw-bold fs-4 me-2">R</div>
+                            <div>
+                                <p class="mb-0 text-dark">Supplier</p>
+                                <p class="mb-0 text-dark fw-bold">Guanjoi Trading LLC</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="list-unstyled text-secondary small">
+                            <li class="mb-2"><img src="./assets/Layout1/Image/flags/DE@2x.png" width="20" class="me-2">
+                                Germany, Berlin</li>
+                            <li class="mb-2"><i class="fas fa-shield-alt me-2 text-secondary"></i> Verified Seller</li>
+                            <li class="mb-2"><i class="fas fa-globe me-2 text-secondary"></i> Worldwide shipping</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary text-white border w-100 text-primary fw-bold"
+                                    onclick="addToCart({id: 1, name: 'Smart White Colored Watch', price: 99.50, image: './assets/Image/tech/8.png'})">
+                                    <i class="fas fa-shopping-cart me-2"></i> Move to cart
+                                </button><button class="btn btn-light border text-primary">Seller's profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none fw-bold text-primary"><i class="far fa-heart me-1"></i>
+                            Save
+                            for later</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-9">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item"><a class="nav-link active fw-bold" href="#">Description</a></li>
+                                <li class="nav-item"><a class="nav-link text-secondary" href="#">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link text-secondary" href="#">Shipping</a></li>
+                                <li class="nav-item"><a class="nav-link text-secondary" href="#">About seller</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+
+                            <table class="table table-bordered w-50 mt-3">
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-light text-secondary">Model</td>
+                                        <td>#8786867</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-light text-secondary">Style</td>
+                                        <td>Classic style</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-light text-secondary">Certificate</td>
+                                        <td>ISO-898921212</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-light text-secondary">Size</td>
+                                        <td>34mm x 450mm x 19mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-light text-secondary">Memory</td>
+                                        <td>36GB RAM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <ul class="list-unstyled text-secondary mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> Some great feature name here</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Lorem ipsum dolor sit amet,
+                                    consectetur
+                                </li>
+                                <li><i class="fas fa-check text-success me-2"></i> Duis aute irure dolor in
+                                    reprehenderit
+                                </li>
+                                <li><i class="fas fa-check text-success me-2"></i> Some great feature name here</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-3">You may like</h6>
+
+                            <div class="d-flex mb-3">
+                                <img src="./assets/Image/tech/8.png" width="50" height="50" class="rounded border me-2">
+                                <div>
+                                    <p class="mb-0 small fw-bold text-dark">Men Blazers Sets Elegant Formal</p>
+                                    <small class="text-muted">$7.00 - $99.50</small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="./assets/Image/tech/image 32.png" width="50" height="50"
+                                    class="rounded border me-2">
+                                <div>
+                                    <p class="mb-0 small fw-bold text-dark">Men Shirt Sleeve Polo Contrast</p>
+                                    <small class="text-muted">$7.00 - $99.50</small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="./assets/Image/tech/image 34.png" width="50" height="50"
+                                    class="rounded border me-2">
+                                <div>
+                                    <p class="mb-0 small fw-bold text-dark">Apple Watch Series Space Gray</p>
+                                    <small class="text-muted">$7.00 - $99.50</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">Related products</h5>
+                    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                        <div class="col">
+                            <img src="./assets/Image/tech/image 23.png" class="img-fluid mb-2" alt="Related">
+                            <p class="small text-muted mb-1">Xiaomi Redmi 8 Original</p>
+                            <small class="text-secondary">$32.00-$40.00</small>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/Image/tech/image 32.png" class="img-fluid mb-2" alt="Related">
+                            <p class="small text-muted mb-1">Xiaomi Redmi 8 Original</p>
+                            <small class="text-secondary">$32.00-$40.00</small>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/Image/tech/image 34.png" class="img-fluid mb-2" alt="Related">
+                            <p class="small text-muted mb-1">Xiaomi Redmi 8 Original</p>
+                            <small class="text-secondary">$32.00-$40.00</small>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/Image/tech/image 33.png" class="img-fluid mb-2" alt="Related">
+                            <p class="small text-muted mb-1">Xiaomi Redmi 8 Original</p>
+                            <small class="text-secondary">$32.00-$40.00</small>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/Image/tech/8.png" class="img-fluid mb-2" alt="Related">
+                            <p class="small text-muted mb-1">Xiaomi Redmi 8 Original</p>
+                            <small class="text-secondary">$32.00-$40.00</small>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/Image/tech/image 33.png" class="img-fluid mb-2" alt="Related">
+                            <p class="small text-muted mb-1">Xiaomi Redmi 8 Original</p>
+                            <small class="text-secondary">$32.00-$40.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary text-white rounded mt-4 p-4 d-flex justify-content-between align-items-center"
+                style="background: linear-gradient(90deg, #2b7af3 0%, #1564d8 100%);">
+                <div>
+                    <h4 class="mb-1">Super discount on more than 100 USD</h4>
+                    <p class="mb-0 opacity-75">Have you ever finally just write dummy info</p>
+                </div>
+                <button class="btn btn-warning text-white fw-bold">Shop now</button>
+            </div>
+    </main>
+
+    <footer class="bg-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/Layout/Brand/logo-colored.png"
+                            height="40" alt="Brand"></a>
+                    <p class="text-muted mt-3 small">Best information about the company gies here but now lorem ipsum is
+                    </p>
+                    <div class="d-flex gap-2">
+                        <i class="fab fa-facebook text-secondary fs-5"></i>
+                        <i class="fab fa-twitter text-secondary fs-5"></i>
+                        <i class="fab fa-linkedin text-secondary fs-5"></i>
+                        <i class="fab fa-instagram text-secondary fs-5"></i>
+                        <i class="fab fa-youtube text-secondary fs-5"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold">About</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>About Us</li>
+                        <li>Find store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold">Partnership</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>About Us</li>
+                        <li>Find store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold">Information</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>Help Center</li>
+                        <li>Money Refund</li>
+                        <li>Shipping</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold">Get app</h6>
+                    <div class="mt-3">
+                        <img src="./assets/Button/Icon/market/appstore.png" class="d-block mb-2" height="30">
+                        <img src="./assets/Button/Icon/market/googleplay.png" class="d-block" height="30">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row align-items-center border-top pt-3">
+                <div class="col-md-6 text-muted small">
+                    © © 2025 Ecommerce by Waleed Ahmad.
+                </div>
+                <div class="col-md-6 text-end">
+                    <img src="./assets/Layout1/Image/flags/US@2x.png" height="15"> <span
+                        class="small text-muted">English</span> <i class="fas fa-angle-up small"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

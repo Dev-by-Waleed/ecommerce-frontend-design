@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Brand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" id="main-nav">
+            <div class="container">
+                <div class="logo-button">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent-1" aria-controls="navbarSupportedContent-1"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/Layout/Brand/logo-colored.png"
+                            alt=""></a>
+                </div>
+                <div class="icons">
+                    <img src="./assets/Mobile/Icon/Vector.png" alt="">
+                    <img src="./assets/Mobile/Icon/control/person.png" alt="">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                All category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item select-item py-2"
+                                        href="./product-listing.html">Automobiles</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#title-recommend">Clothes and
+                                        wear</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-appliances">Home
+                                        interiors</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="./product-listing.html">Computer and
+                                        tech</a>
+                                </li>
+                                <li><a class="dropdown-item select-item py-2" href="#section-gadgets">Tools,
+                                        equipments</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#">Sports and outdoor</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="#">Animal and pets</a></li>
+                                <li><a class="dropdown-item select-item py-2" href="./product-listing.html">Machinery
+                                        tools</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./product-listing.html">More category</a></li>
+                            </ul>
+                        </button>
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-message"></i>
+                                <p>Message</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>
+                                <p>Orders</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping"></i>
+                                <p>Add to cart</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg" id="seconary-nav">
+            <div class="container">
+                <form class="d-flex" role="search" id="mobile-nav">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn">All category</button>
+                    <button class="btn">Gadgets</button>
+                    <button class="btn">Clothes</button>
+                    <button class="btn">Accessibility</button>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./product-listing.html">All
+                                category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-sale">Hot offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift boxes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu item</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Money Refund</a></li>
+                                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex list-unstyled px-3" id="user-accordance">
+                        <li>
+                            <select name="currency" id="currency" class="form-select border-0 "
+                                aria-label="Default select example">
+                                <option value="AED"> &nbsp; Arabic, AED </option>
+                                <option value="CNY"> &nbsp; Chinese, CNY</option>
+                                <option value="EUR"> &nbsp; German, EUR</option>
+                                <option value="DKK"> &nbsp; Danish, DKK</option>
+                                <option value="EUR"> &nbsp; French, EUR</option>
+                                <option value="GBP"> &nbsp; English, GBP</option>
+                                <option value="AUD"> &nbsp; English, AUD</option>
+                                <option value="EUR"> &nbsp; Italian, EUR</option>
+                                <option value="RUB"> &nbsp; Russian, RUB</option>
+                                <option selected value="USD"> &nbsp; English, USD &nbsp;</option>
+                            </select>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <select name="country" id="country" class="form-select border-0">
+                                <option value="China"> &nbsp; Ship to China <img
+                                        src="./assets/Layout1/Image/flags/CN@2x.png" alt="">
+                                </option>
+                                <option value="Germany"> &nbsp; Ship to Germany <img
+                                        src="./assets/Layout1/Image/flags/DE@2x.png" alt="">
+                                </option>
+                                <option value="Denmark"> &nbsp; Ship to Denmark <img
+                                        src="./assets/Layout1/Image/flags/DK@2x.png" alt="">
+                                </option>
+                                <option value="France"> &nbsp; Ship to France <img
+                                        src="./assets/Layout1/Image/flags/FR@2x.png" alt="">
+                                </option>
+                                <option value="UK"> &nbsp; Ship to UK <img src="./assets/Layout1/Image/flags/GB@2x.png"
+                                        alt="">
+                                </option>
+                                <option value="Austrlia"> &nbsp; Ship to Austrlia <img
+                                        src="./assets/Layout1/Image/flags/icon.png" alt="">
+                                </option>
+                                <option value="Italy"> &nbsp; Ship to Italy <img
+                                        src="./assets/Layout1/Image/flags/IT@2x.png" alt="">
+                                </option>
+                                <option value="Russia"> &nbsp; Ship to Russia <img
+                                        src="./assets/Layout1/Image/flags/RU@2x.png" alt="">
+                                </option>
+                                <option selected value="USA"> &nbsp; Ship to USA <img
+                                        src="./assets/Layout1/Image/flags/US@2x.png" alt="">
+                                </option>
+                            </select>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="top">
+            <div class="Breadcrumb container">
+                <span>Home</span>
+                <span>></span>
+                <span>Tech</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <h4 class="mb-4">My Cart</h4>
+
+        <div class="row gx-4">
+            <div id="cart-items-container">
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+                <a href="product-listing.html" class="btn btn-primary px-4"><i class="fas fa-arrow-left me-2"></i> Back
+                    to shop</a>
+                <button class="btn btn-outline-primary px-4" onclick="clearCart()">Remove all</button>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="saved-items-container">
+            </div>
+
+            <span id="cart-subtotal">$0.00</span>
+            <span id="cart-total">$0.00</span>
+
+            <div class="col-lg-3">
+                <div class="card-body">
+    <label class="form-label text-muted">Have a coupon?</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Add coupon">
+        <button class="btn btn-outline-secondary text-primary border-start-0 border" type="button">Apply</button>
+    </div>
+    <hr>
+    
+    <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span id="summary-subtotal">$0.00</span>
+    </div>
+
+    <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Discount:</span>
+        <span class="text-danger" id="summary-discount">- $60.00</span>
+    </div>
+
+    <div class="d-flex justify-content-between mb-3">
+        <span class="text-muted">Tax:</span>
+        <span class="text-success" id="summary-tax">+ $14.00</span>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-between mb-4">
+        <span class="fw-bold fs-5">Total:</span>
+        <span class="fw-bold fs-5" id="summary-total">$0.00</span>
+    </div>
+
+    <button class="btn btn-success w-100 py-2 fs-6">Checkout</button>
+
+    <div class="mt-4 d-flex justify-content-center gap-2">
+        <i class="fab fa-cc-amex fa-2x text-secondary"></i>
+        <i class="fab fa-cc-mastercard fa-2x text-secondary"></i>
+        <i class="fab fa-cc-paypal fa-2x text-secondary"></i>
+        <i class="fab fa-cc-visa fa-2x text-secondary"></i>
+        <i class="fab fa-cc-apple-pay fa-2x text-secondary"></i>
+    </div>
+</div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="bg-light rounded-circle p-3 me-3 text-secondary">
+                    <i class="fas fa-lock fa-lg"></i>
+                </div>
+                <div>
+                    <h6 class="fw-bold mb-0">Secure payment</h6>
+                    <small class="text-muted">Have you ever finally just</small>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="bg-light rounded-circle p-3 me-3 text-secondary">
+                    <i class="fas fa-comment-dots fa-lg"></i>
+                </div>
+                <div>
+                    <h6 class="fw-bold mb-0">Customer support</h6>
+                    <small class="text-muted">Have you ever finally just</small>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="bg-light rounded-circle p-3 me-3 text-secondary">
+                    <i class="fas fa-truck fa-lg"></i>
+                </div>
+                <div>
+                    <h6 class="fw-bold mb-0">Free delivery</h6>
+                    <small class="text-muted">Have you ever finally just</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="fw-bold mb-4">Saved for later</h5>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="bg-light rounded p-3 mb-3 text-center">
+                            <img src="./assets/Image/tech/8.png" class="img-fluid" style="height: 150px;">
+                        </div>
+                        <h5 class="fw-bold mb-1">$99.50</h5>
+                        <p class="text-muted small mb-3">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="btn btn-light border w-100 text-primary fw-bold"
+                            onclick="addToCart({id: 1, name: 'GoPro HERO6 4K Action Camera', price: 99.50, image: './assets/Image/tech/8.png'})">
+                            <i class="fas fa-shopping-cart me-2"></i> Move to cart
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="bg-light rounded p-3 mb-3 text-center">
+                            <img src="./assets/Image/tech/image 23.png" class="img-fluid" style="height: 150px;">
+                        </div>
+                        <h5 class="fw-bold mb-1">$99.50</h5>
+                        <p class="text-muted small mb-3">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="btn btn-light border w-100 text-primary fw-bold"
+                            onclick="addToCart({id: 2, name: 'GoPro HERO6 4K Action Camera - Black', price: 99.50, image: './assets/image/tech/image 23.png'})">
+                            <i class="fas fa-shopping-cart me-2"></i> Move to cart
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="bg-light rounded p-3 mb-3 text-center">
+                            <img src="./assets/Image/tech/image 32.png" class="img-fluid" style="height: 150px;">
+                        </div>
+                        <h5 class="fw-bold mb-1">$99.50</h5>
+                        <p class="text-muted small mb-3">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="btn btn-light border w-100 text-primary fw-bold"
+                            onclick="addToCart({id: 3, name: 'GoPro HERO6 4K Action Camera', price: 99.50, image: './assets/Image/tech/image 32.png'})">
+                            <i class="fas fa-shopping-cart me-2"></i> Move to cart
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="bg-light rounded p-3 mb-3 text-center">
+                            <img src="./assets/Image/tech/image 34.png" class="img-fluid" style="height: 150px;">
+                        </div>
+                        <h5 class="fw-bold mb-1">$99.50</h5>
+                        <p class="text-muted small mb-3">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="btn btn-light border w-100 text-primary fw-bold"
+                            onclick="addToCart({id: 4, name: 'GoPro HERO6 4K Action Camera', price: 99.50, image: './assets/Image/tech/image 34.png'})">
+                            <i class="fas fa-shopping-cart me-2"></i> Move to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-primary text-white rounded mt-4 p-4 d-flex justify-content-between align-items-center"
+            style="background: linear-gradient(90deg, #2b7af3 0%, #1564d8 100%);">
+            <div>
+                <h4 class="mb-1">Super discount on more than 100 USD</h4>
+                <p class="mb-0 opacity-75">Have you ever finally just write dummy info</p>
+            </div>
+            <button class="btn btn-warning text-white fw-bold">Shop now</button>
+        </div>
+
+    </main>
+
+    <footer class="bg-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/Layout/Brand/logo-colored.png"
+                            height="40" alt="Brand"></a>
+                    <p class="text-muted mt-3 small">Best information about the company gies here but now lorem ipsum is
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold">About</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>About Us</li>
+                        <li>Find store</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold">Partnership</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>About Us</li>
+                        <li>Find store</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold">Information</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>Help Center</li>
+                        <li>Money Refund</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold">Get app</h6>
+                    <div class="mt-3">
+                        <!-- <img src="./assets/Button/Icon/market/appstore.png" class="d-block mb-2" height="30">
+                    <img src="./assets/Button/Icon/market/googleplay.png" class="d-block" height="30"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row align-items-center border-top pt-3">
+                <div class="col-md-6 text-muted small">
+                    © 2025 Ecommerce by Waleed Ahmad.
+                </div>
+                <div class="col-md-6 text-end">
+                    <img src="./assets/Layout1/Image/flags/US@2x.png" height="15"> <span
+                        class="small text-muted">English</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

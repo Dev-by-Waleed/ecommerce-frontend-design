@@ -1,0 +1,168 @@
+body {
+    background-color: #f7fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.btn-success {
+    background-color: #00b517;
+    border-color: #00b517;
+}
+
+.btn-light {
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+}
+
+/* Coupon input specific styling */
+.input-group .btn {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+/* Feature icons circle background */
+.rounded-circle.bg-light {
+    background-color: #e0e0e0 !important;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+:root {
+    --primary-color: #127FFF;
+    --secondary-color: #FFFFFF;
+    --last-option: #8B96A5;
+    --border-default: #EFF2F4;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+                                                        /* HEADER */
+                                                        /* NAVBAR */
+header {
+    background-color: var(--secondary-color);
+}
+header p {
+    margin: 0px;
+}
+.navbar>.container {
+    justify-content: space-between !important;
+}
+
+.navbar .icons {
+    display: none;
+}
+
+#navbarSupportedContent {
+    flex-grow: 0;
+    justify-content: space-between !important;
+    width: 900px;
+}
+
+#navbarSupportedContent form {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+#navbarSupportedContent form input {
+    max-width: 400px;
+    border-radius: 10px !important;
+}
+
+#navbarSupportedContent form .btn:nth-of-type(1) {
+    width: 300px;
+    border-left: 1px solid var(--primary-color);
+    border-radius: 0;
+}
+
+#navbarSupportedContent form .btn:nth-of-type(2) {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 0;
+}
+#main-nav .navbar-nav .nav-link  {
+    text-align: center;
+    color: #8B96A5;
+}
+#main-nav .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+ul {
+    list-style-type: none !important;
+}
+select {
+    border-radius: 6px;
+}
+option {
+    background-color: #fff;
+}
+option:checked {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+#seconary-nav {
+    border: 1px solid var(--border-default);
+}
+
+#seconary-nav #mobile-nav {
+    display: none !important;
+}
+.active {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar .icons {
+        display: block;
+    }
+
+    #seconary-nav #mobile-nav {
+        display: block !important;
+        width: 100%;
+        color: var(--primary-color) !important;
+    }
+     #seconary-nav #mobile-nav button {
+        color: var(--primary-color) !important;
+        background-color: var(--border-default);
+        margin: 7px 0;
+    }
+}
+
+details {
+    color: var(--primary-color);
+}
+.top {
+    background-color: #f7fafc;
+    
+
+}
+.Breadcrumb {
+    color: var(--last-option);
+    padding: 20px 30px;
+}
+.Breadcrumb span {
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
